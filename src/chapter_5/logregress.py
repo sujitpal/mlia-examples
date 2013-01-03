@@ -24,6 +24,33 @@ def gradAscent(data, labels, alpha=0.001, iterations=500):
      weights = weights + (alpha * datamatrix.transpose() * error)
   return weights
 
+def stocGradAscent0(data, labels, alpha=0.01):
+  """ single pass, use one record at a time instead of entire matrix """
+  datamatrix = array(data)
+  m, n = shape(datamatrix)
+  weights = ones(n)
+  for i in range(0, m):
+    h = sigmoid(sum(datamatrix[i] * weights))
+    error = labels[i] - h
+    weights = weights + (alpha * error * datamatrix[i])
+  return weights
+
+def stocGradAscent1(data, labels, iterations=200):
+  """ multi pass, varying alpha and use random record order """
+  datamatrix = array(data)
+  m, n = shape(datamatrix)
+  weights = ones(n)
+  for j in range(0, iterations):
+    dataidx = range(0, m)
+    for i in range(0, m):
+      alpha = 0.01 + (4 / 1.0 + j + i)
+      randidx = int(random.uniform(0, len(dataidx)))
+      h = sigmoid(sum(datamatrix[randidx] * weights))
+      error = labels[randidx] - h
+      weights = weights + (alpha * error * datamatrix[randidx])
+      del(dataidx[randidx])
+  return weights
+
 def plotBestFit(weights):
   import matplotlib.pyplot as plt
   data, labels = loadDataSet()
@@ -49,32 +76,6 @@ def plotBestFit(weights):
   plt.xlabel('X1')
   plt.ylabel('X2')
   plt.show()
-
-def stocGradAscent0(data, labels, alpha=0.01):
-  """ single pass """
-  datamatrix = array(data)
-  m, n = shape(datamatrix)
-  weights = ones(n)
-  for i in range(0, m):
-    h = sigmoid(sum(datamatrix[i] * weights))
-    error = labels[i] - h
-    weights = weights + (alpha * error * datamatrix[i])
-  return weights
-
-def stocGradAscent1(data, labels, iterations=200):
-  datamatrix = array(data)
-  m, n = shape(datamatrix)
-  weights = ones(n)
-  for j in range(0, iterations):
-    dataidx = range(0, m)
-    for i in range(0, m):
-      alpha = 0.01 + (4 / 1.0 + j + i)
-      randidx = int(random.uniform(0, len(dataidx)))
-      h = sigmoid(sum(datamatrix[randidx] * weights))
-      error = labels[randidx] - h
-      weights = weights + (alpha * error * datamatrix[randidx])
-      del(dataidx[randidx])
-  return weights
 
 def classify(xs, weights):
   prob = sigmoid(sum(xs * weights))
