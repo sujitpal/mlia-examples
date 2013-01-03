@@ -1,4 +1,3 @@
-from numpy import __NUMPY_SETUP__
 from __future__ import division
 from numpy import *
 
@@ -159,14 +158,14 @@ def localWordsTest(feed1Url, feed0Url):
   while len(trainidx) < ntrain:
     ri = int(random.uniform(0, ndocs))
     if ri not in trainidx:
-      traindocs.append(bagOfWords2Vec(vocab, docs[ri]))
+      traindocs.append(bagOfWords2Vec(vocabs, docs[ri]))
       trainlabels.append(labels[ri])
       trainidx.add(ri)
   p0Vec, p1Vec, p1 = trainNB0(traindocs, trainlabels)
   testidx = filter(lambda x: x not in trainidx, range(0, ndocs))
   errorCount = 0.0
   for idx in testidx:
-    vec = bagOfWordsToVec(vocabs, docs[idx])
+    vec = bagOfWords2Vec(vocabs, docs[idx])
     actLabel = classifyNB(vec, p0Vec, p1Vec, p1)
     if actLabel != labels[idx]:
       errorCount += 1.0
@@ -174,19 +173,23 @@ def localWordsTest(feed1Url, feed0Url):
   # find top words in each class
   topSf = []
   topNy = []
-  for i in range(p0Vec):
+  for i in range(0, len(p0Vec)):
     if p0Vec[i] > -6.0:
       topSf.append((vocabs[i], p0Vec[i]))
     else:
       topNy.append((vocabs[i], p1Vec[i]))
-  print "Top SF words", sorted(topSf.iteritems(),
-    key=operator.itergetter(1), reverse=True)
-  print "Top SF words", sorted(topNy.iteritems(),
-    key=operator.itergetter(1), reverse=True)
+  print "Top SF words:", map(lambda x: str(x[0]),
+    sorted(topSf, key=lambda x: x[1], reverse=True))
+  print "Top NY words:", map(lambda x: str(x[0]),
+    sorted(topNy, key=lambda x: x[1], reverse=True))
 
 
 # Dalmatian example
 #dalmatianTest()
+
+# Spam Email example (needs data from github)
 #spamTest()
+
+# Feeds (NY or SF example)
 localWordsTest("http://newyork.craigslist.org/stp/index.rss",
   "http://sfbay.craigslist.org/stp/index.rss")
