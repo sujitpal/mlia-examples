@@ -2,12 +2,12 @@ from time import sleep
 import json
 import urllib2
 
-def get_google_key(licenseFile):
-  return open(licenseFile).read().strip()
+def get_google_key():
+  return open("/Users/sujit/Documents/Personal/google.lic").read().strip()
 
 def searchForSet(retX, retY, setNum, yr, numPce, origPrc):
   sleep(10)
-  myAPIstr = get_google_key("google.lic")
+  myAPIstr = get_google_key()
   searchURL = 'https://www.googleapis.com/shopping/search/v1/public/products?key=%s&country=US&q=lego+%d&alt=json' % (myAPIstr, setNum)
   pg = urllib2.urlopen(searchURL)
   retDict = json.loads(pg.read())
