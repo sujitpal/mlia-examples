@@ -147,7 +147,7 @@ class Users:
     nusers = len(programEntities.userIndex.keys())
     fin = open("../Data/users.csv", 'rb')
     colnames = fin.readline().strip().split(",")
-    self.userMatrix = ss.dok_matrix((nusers, len(colnames) - 2))
+    self.userMatrix = ss.dok_matrix((nusers, len(colnames) - 1))
     for line in fin:
       cols = line.strip().split(",")
       # consider the user only if he exists in train.csv
@@ -158,7 +158,7 @@ class Users:
         self.userMatrix[i, 2] = cleaner.getGenderId(cols[3])
         self.userMatrix[i, 3] = cleaner.getJoinedYearMonth(cols[4])
         self.userMatrix[i, 4] = cleaner.getCountryId(cols[5])
-        self.userMatrix[i, 5] = cleaner.getTimezoneInt(cols[7])
+        self.userMatrix[i, 5] = cleaner.getTimezoneInt(cols[6])
     fin.close()
     # normalize the user matrix
     self.userMatrix = normalize(self.userMatrix, norm="l1", axis=0, copy=False)
@@ -310,12 +310,12 @@ def main():
   pe = ProgramEntities()
   print "calculating user metrics..."
   Users(pe)
-#  print "calculating user friend metrics..."
-#  UserFriends(pe)
-#  print "calculating event metrics..."
-#  Events(pe)
-#  print "calculating event popularity metrics..."
-#  EventAttendees(pe)
+  print "calculating user friend metrics..."
+  UserFriends(pe)
+  print "calculating event metrics..."
+  Events(pe)
+  print "calculating event popularity metrics..."
+  EventAttendees(pe)
 
 if __name__ == "__main__":
   main()
