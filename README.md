@@ -1,6 +1,8 @@
 mlia-examples
 =============
 
+Python and R code to do miscellaneous Data Mining tasks. Python code started with the Machine Learning in Action book by Peter Harrington, and since then have moved to using scikit-learn.
+
 src/book/
 ==========
 
@@ -17,4 +19,8 @@ My solution for the Kaggle Event Recommendation Challenge. Given a training set 
 src/salary_pred/
 =================
 A solution to the Adzuna Salary Prediction Challenge on Kaggle. Given a set of job ads, predict the salary for the job. The solution is incomplete and predicts very poorly. Uses NLTK and Scikit-Learn.
+
+src/bird_strikes
+=================
+A set of visualizations using R. The data was provided as part of a programming assignment using Tableau in the Coursera Introduction to Data Science course. I wanted to see if I could produce something equivalent using R.
 
