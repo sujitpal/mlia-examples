@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 INFECT_RATE = 0.15
 RECOVER_RATE = 0.40
 NUM_NODES = 200
-AVG_DEGREE = 3.8
+AVG_DEGREE = 3.0
 TIME_UNITS = 20000
 
 # create a basic Erdos-Renyi graph with 200 nodes and 0.5 probability
@@ -29,7 +29,7 @@ num_edges = 0
 while num_edges < tot_edges:
   n1 = int(random.uniform(0, NUM_NODES))
   n2 = int(random.uniform(0, NUM_NODES))
-  if n1 == n2: continue
+  if n1 == n2 or G.has_edge(n1, n2): continue
   G.add_edge(n1, n2)
   num_edges = G.number_of_edges()
 print "graph created:(%d,%d)" % (G.number_of_nodes(), G.number_of_edges())
