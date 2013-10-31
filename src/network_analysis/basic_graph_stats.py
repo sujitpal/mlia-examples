@@ -2,7 +2,7 @@ import networkx as nx
 import operator
 
 # your GML file
-filename = 'LadaFacebookAnon.gml'
+filename = '../../data/network-analysis/LadaFacebookAnon.gml'
 
 # read in the graph using networkX
 G = nx.read_gml(filename, relabel=True)

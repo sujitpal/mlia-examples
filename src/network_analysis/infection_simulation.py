@@ -59,5 +59,3 @@ for t in range(0, TIME_UNITS):
 print "average #-people infected=", np.mean(num_infected)
 plt.plot(num_infected)
 plt.show()
-
-
