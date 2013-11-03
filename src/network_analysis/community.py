@@ -1,5 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+# COMMUNITY - networkx plugin code downloaded from 
+# https://bitbucket.org/taynaud/python-louvain
+# community.py is a part of this package and so far seems to be okay to
+# use standalone.
+
 """
 This module implements community detection.
 """
