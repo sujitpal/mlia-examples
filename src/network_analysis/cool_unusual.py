@@ -57,7 +57,7 @@ def count_sex_interactions(G, id_sex_map):
 #     equivalent Erdos Renyi random graph.
 # [x] the average degree is higher than it would be in an ER random 
 #     graph with the same number of nodes and edges
-# [ ] the network is assortative on sex: same sex interactions occur 
+# [x] the network is assortative on sex: same sex interactions occur 
 #     more often than they would if the network were rewired at random
 def q3():
   G_dolphins = nx.read_gml("../../data/network-analysis/dolphins.gml")
