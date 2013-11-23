@@ -28,7 +28,7 @@ src/network\_analysis
 ====================
 Partial/In-progress solutions to Coursera's Social Network Analysis course that I took late 2013. My approach was to solve as many questions as I could without depending on visualization tools such as Gephi or Netlogo (and sometimes my solutions are incorrect) and relying on NetworkX and IGraph.
 
-src/enron\_analysis
+src/enron\_network
 ==================
 Code for my Peer Programming Assignment for the Social Network Analysis course on Coursera. I build a graph of people based on the from and to email addresses in the dataset, and investigate various centrality measures and other indicators of node importance (PageRank and HITS Authority) to see how effective they are at finding the guilty (tested against a list of 12 individuals who were found guilty).
 
