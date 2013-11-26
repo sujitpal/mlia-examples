@@ -32,3 +32,6 @@ src/enron\_network
 ==================
 Code for my Peer Programming Assignment for the Social Network Analysis course on Coursera. I build a graph of people based on the from and to email addresses in the dataset, and investigate various centrality measures and other indicators of node importance (PageRank and HITS Authority) to see how effective they are at finding the guilty (tested against a list of 12 individuals who were found guilty).
 
+src/recsys\_eval
+================
+Pandas code to answer questions about a evaluation run for multiple recommenders across multiple user neighborhood sizes.
