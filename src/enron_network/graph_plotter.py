@@ -33,6 +33,7 @@ def vertex_size(s, ps):
   return 5
 
 def plot_pruned_graph(G, dcutoff):
+  # docs: http://python-igraph.readthedocs.org/en/latest/tutorial.html
   # only keep the top 1000 degree centrality vertices
   degs = G.degree()
   partitions = partition(degs, 10)
