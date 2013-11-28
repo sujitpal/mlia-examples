@@ -4,9 +4,8 @@ import matplotlib.pyplot as plt
 
 max_nodes_to_consider = 1000
 
-known_guilty = set([7732, 49524, 8359, 12472, 60077, 
-                    43961, 73597, 4872, 10973, 47362, 
-                    49212, 64246])
+known_guilty = set([7682, 49535, 8324, 12433, 60113, 43955, 
+                    47466, 4820, 10960, 47384, 49213, 64249])
 
 def email_address(G, nid):
   return G.vs[nid]["label"]
