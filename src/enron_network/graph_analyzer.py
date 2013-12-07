@@ -1,81 +1,65 @@
 import igraph as ig
-import operator
 import matplotlib.pyplot as plt
+import operator
+import pandas as pd
 
-max_nodes_to_consider = 1000
-
-known_guilty = set([7682, 49535, 8324, 12433, 60113, 43955, 
+KNOWN_GUILTY = set([7682, 49535, 8324, 12433, 60113, 43955, 
                     47466, 4820, 10960, 47384, 49213, 64249])
 
-def email_address(G, nid):
-  return G.vs[nid]["label"]
-
-def nodes(G):
-  return [v.index for v in G.vs]
-
-def compute_top_vertices(G, metric, n):
-  sorted_metric = sorted(zip(nodes(G), metric), key=operator.itemgetter(1), 
+def cumulative_hits(nodes, metric, n, filter_nodes):
+  pairs = zip(nodes, metric)
+  if filter_nodes is not None:
+    pairs = [p for p in pairs if p[0] in filter_nodes]
+  sorted_metric = sorted(pairs, key=operator.itemgetter(1), 
     reverse=True)[0:n]
-  return [x[0] for x in sorted_metric]
+  top_nodes = [x[0] for x in sorted_metric]
+  cum_hits = []
+  for i in range(0, len(top_nodes)):
+    top_node_set = set(top_nodes[0:i])
+    match_set = top_node_set.intersection(KNOWN_GUILTY)
+    cum_hits.append(len(match_set))
+  return cum_hits
 
-def plot_intersection(vs, title, G):
-  xs = []
-  ys = []
-  match_set = set()
-  for i in range(0, len(vs)):
-    top_set = set(vs[0:i])
-    match_set = top_set.intersection(known_guilty)
-    #print "At %d, matched=%d" % (i, len(match_set))
-    xs.append(i)
-    ys.append(len(match_set))
-  print title
-  print [email_address(G, nid) for nid in match_set]
-  fig = plt.figure()
-  ax = fig.add_subplot(111)
-  ax.set_title(title)
-  ax.set_xlabel("#-vertices")
-  ax.set_ylabel("#-matched")
-  ax.plot(xs, ys)
+def run_all_hypotheses(G, topn, filter_nodes):
+  df = pd.DataFrame(index=range(0,topn))
+  nodes = [v.index for v in G.vs]
+  df["Degree_Centrality"] = cumulative_hits(
+    nodes, G.degree(), topn, filter_nodes)
+  df["Closeness_Centrality"] = cumulative_hits(
+    nodes, G.closeness(cutoff=3), topn, filter_nodes)
+  df["Betweenness_Centrality"] = cumulative_hits(
+    nodes, G.betweenness(cutoff=3), topn, filter_nodes)
+  df["Eigenvector_Centrality"] = cumulative_hits(
+    nodes, G.eigenvector_centrality(), topn, filter_nodes)
+  df["PageRank"] = cumulative_hits(
+    nodes, G.pagerank(directed=True, damping=0.85), topn, filter_nodes)
+  df["HITS_Authority"] = cumulative_hits(
+    nodes, G.authority_score(), topn, filter_nodes)
+  df.plot()
   plt.show()
 
-def test_degree_centrality_hypothesis(G):
-  dc = G.degree()
-  top_vertices = compute_top_vertices(G, dc, max_nodes_to_consider)
-  plot_intersection(top_vertices, "Degree Centrality", G)
-  
-def test_closeness_centrality_hypothesis(G):
-  cl = G.closeness(cutoff=3)
-  top_vertices = compute_top_vertices(G, cl, max_nodes_to_consider)
-  plot_intersection(top_vertices, "Closeness Centrality", G)
+def prune_enron_only(G):
+  enron = set([v.index for v in G.vs if v["label"].endswith("@enron.com")])
+  return enron
 
-def test_betweenness_centrality_hypothesis(G):
-  bc = G.betweenness(cutoff=3)
-  top_vertices = compute_top_vertices(G, bc, max_nodes_to_consider)
-  plot_intersection(top_vertices, "Betweenness Centrality", G)
-
-def test_eigenvector_centrality_hypothesis(G):
-  ec = G.eigenvector_centrality()
-  top_vertices = compute_top_vertices(G, ec, max_nodes_to_consider)
-  plot_intersection(top_vertices, "Eigenvector Centrality", G)
-
-def test_pagerank_hypothesis(G):
-  pr = G.pagerank(directed=True, damping=0.85)
-  top_vertices = compute_top_vertices(G, pr, max_nodes_to_consider)
-  plot_intersection(top_vertices, "Pagerank Centrality", G)
-
-def test_hits_authority_hypothesis(G):
-  ats = G.authority_score()
-  top_vertices = compute_top_vertices(G, ats, max_nodes_to_consider)
-  plot_intersection(top_vertices, "HITS Authority Scores", G)
+def prune_with_nonenron_collaborators_only(G):
+  # find list of non enron nodes
+  not_enron = set([v.index for v in G.vs 
+    if not v["label"].endswith("@enron.com")])
+  # find nodes with non enron collaborators
+  nnecs = set()
+  for v in G.vs:
+    if v["label"].endswith("@enron.com"):
+      nvs = set([int(nv["id"]) for nv in v.neighbors()])
+      if len(nvs.intersection(not_enron)) > 0:
+        nnecs.add(v.index)
+  return nnecs
 
 def main():
   G = ig.read("enron.gml")
-  test_degree_centrality_hypothesis(G)
-  test_closeness_centrality_hypothesis(G)
-  test_betweenness_centrality_hypothesis(G)
-  test_eigenvector_centrality_hypothesis(G)
-  test_pagerank_hypothesis(G)
-  test_hits_authority_hypothesis(G)
+  run_all_hypotheses(G, 1000, None)
+  run_all_hypotheses(G, 1000, prune_enron_only(G))
+  run_all_hypotheses(G, 1000, prune_with_nonenron_collaborators_only(G))
 
 if __name__ == "__main__":
   main()
