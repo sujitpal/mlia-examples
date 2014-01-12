@@ -35,3 +35,8 @@ Code for my Peer Programming Assignment for the Social Network Analysis course o
 src/recsys\_eval
 ================
 Pandas code to answer questions about a evaluation run for multiple recommenders across multiple user neighborhood sizes.
+
+src/yelp\_ufc
+==============
+Scikit-Learn code to build and evaluate 3 Naive Bayes classifers to predict if a review is useful, funny or cool. Uses data from the Yelp challenge on Kaggle that requires solutions to also predict number of votes that a review will receive in each category. I wanted to figure out if Sentiment Analysis could be treated as a classification problem (rather than use polarity keywords).
+
