@@ -1,14 +1,13 @@
+from sklearn.cross_validation import KFold
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_selection import chi2
+from sklearn.metrics import accuracy_score, precision_score, recall_score
+from sklearn.naive_bayes import MultinomialNB
 import json
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.cross_validation import KFold
-from sklearn.metrics import accuracy_score, precision_score, recall_score
-from sklearn.feature_selection import chi2
 import operator
 
 def read_data(fname):
-  # read training data and actual categories into temp variables
   f = open(fname, 'rb')
   texts = []
   ys = []
@@ -23,22 +22,14 @@ def read_data(fname):
   return texts, np.matrix(ys)
 
 def vectorize(texts, vocab=[]):
-  # vectorize the text
   vectorizer = CountVectorizer(min_df=0, stop_words="english") 
   if len(vocab) > 0:
     vectorizer = CountVectorizer(min_df=0, stop_words="english", 
       vocabulary=vocab)
   X = vectorizer.fit_transform(texts)
-  # return vocab, text vector and category matrices
   return vectorizer.vocabulary_, X
 
-def print_report(ufc_val, scores):
-  print "----"
-  print ufc_val + " accuracy:", np.mean([x[0] for x in scores])
-  print ufc_val + " precision:", np.mean([x[1] for x in scores])
-  print ufc_val + " recall:", np.mean([x[2] for x in scores])
-
-def cross_validate(ufc_val, X, y):
+def cross_validate(ufc_val, X, y, nfeats):
   nrows = X.shape[0]
   kfold = KFold(nrows, 10)
   scores = []
@@ -51,7 +42,10 @@ def cross_validate(ufc_val, X, y):
     precision = precision_score(ytest, ypred)
     recall = recall_score(ytest, ypred)
     scores.append((accuracy, precision, recall))
-  print_report(ufc_val, scores)
+  print ",".join([ufc_val, str(nfeats), 
+    str(np.mean([x[0] for x in scores])),
+    str(np.mean([x[1] for x in scores])),
+    str(np.mean([x[2] for x in scores]))])
 
 def sorted_features(ufc_val, V, X, y, topN):
   iv = {v:k for k, v in V.items()}
@@ -66,17 +60,16 @@ def sorted_features(ufc_val, V, X, y, topN):
 
 def main():
   ufc = {0:"useful", 1:"funny", 2:"cool"}
-  texts, ys = read_data("yelp_training_set_review.json")
+  texts, ys = read_data("../../data/yelp_ufc/yelp_training_set_review.json")
+  print ",".join(["attrtype", "nfeats", "accuracy", "precision", "recall"])
   for ufc_idx, ufc_val in ufc.items():
-    print "*** Analysis for", ufc_val
     y = ys[:, ufc_idx].A1
     V, X = vectorize(texts)
-    cross_validate(ufc_val, X, y)
+    cross_validate(ufc_val, X, y, -1)
     sorted_feats = sorted_features(ufc_val, V, X, y, 10)
-    for nfeats in [100, 300, 10000, 30000, 100000]:
-      print "USING %d FEATURES FOR %s" % (nfeats, ufc_val)
+    for nfeats in [1000, 3000, 10000, 30000, 100000]:
       V, X = vectorize(texts, sorted_feats[0:nfeats])
-      cross_validate(ufc_val, X, y)
+      cross_validate(ufc_val, X, y, nfeats)
 
 if __name__ == "__main__":
   main()
