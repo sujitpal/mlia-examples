@@ -12,11 +12,11 @@ import re
 # ( ) LEPR id=1386
 # ( ) FOXE3 id=743
 def q2():
-  #G_in = nx.read_gexf("../../data/network-analysis/diseasome.gexf")
+  #G_in = nx.read_gexf("../../data/network_analysis/diseasome.gexf")
   #nx.write_gml(G)
   # The supplied file is malformed, had many problems converting gexf
   # into gml. nx.read_gml() doesn't read the label, we do this manually
-  G = nx.read_gml("../../data/network-analysis/diseasome.gml")
+  G = nx.read_gml("../../data/network_analysis/diseasome.gml")
   dcs = nx.centrality.degree_centrality(G)
   dcs_ourgenes = sorted([x for x in dcs.iteritems() 
                          if x[0] in set([350,1040,1386,743])], 
@@ -60,7 +60,7 @@ def count_sex_interactions(G, id_sex_map):
 # [x] the network is assortative on sex: same sex interactions occur 
 #     more often than they would if the network were rewired at random
 def q3():
-  G_dolphins = nx.read_gml("../../data/network-analysis/dolphins.gml")
+  G_dolphins = nx.read_gml("../../data/network_analysis/dolphins.gml")
   num_nodes = G_dolphins.number_of_nodes()
   num_edges = G_dolphins.number_of_edges()
   # option 1
@@ -95,7 +95,7 @@ def q3():
   # of {node.id => node.sex}.
   dolphins = 0
   ergs = 0
-  id_sex = build_id_sex_map("../../data/network-analysis/dolphins.gml")
+  id_sex = build_id_sex_map("../../data/network_analysis/dolphins.gml")
   si_dolphins = count_sex_interactions(G_dolphins, id_sex)
   for i in range(0, 11):
     G_erg = nx.erdos_renyi_graph(num_nodes, ecp)
@@ -117,7 +117,7 @@ def q3():
 # (x) SN100
 # ( ) Vau
 def q4():
-  G = ig.read("../../data/network-analysis/dolphins.gml")
+  G = ig.read("../../data/network_analysis/dolphins.gml")
   nodes = [int(v["id"]) for v in G.vs]
   bcs = G.betweenness()
   it = sorted(zip(nodes, bcs), key=operator.itemgetter(1), reverse=True)[0][0]
@@ -186,7 +186,7 @@ def read_gdf(gdf_file):
 # ( ) walnut
 # ( ) dill
 def q7():
-  G = read_gdf("../../data/network-analysis/MiddleEastern.gdf")
+  G = read_gdf("../../data/network_analysis/MiddleEastern.gdf")
   nx.write_gml(G, "/tmp/MiddleEastern.gml")
   G = ig.read("/tmp/MiddleEastern.gml")
   bcs = G.betweenness()

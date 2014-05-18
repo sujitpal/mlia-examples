@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2013-10-27">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="frequency" title="frequency" type="double"></attribute>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="pmi" title="pmi" type="double"></attribute>
+    </attributes>
+    <nodes>
+      <node id="v1" label="lemon">
+        <attvalues>
+          <attvalue for="frequency" value="88.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-232.60643" y="-155.50255" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v2" label="coriander">
+        <attvalues>
+          <attvalue for="frequency" value="58.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="89.88237" y="-7.4678283" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v3" label="pepper">
+        <attvalues>
+          <attvalue for="frequency" value="87.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="200.12326" y="-412.9567" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v4" label="egg">
+        <attvalues>
+          <attvalue for="frequency" value="239.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-536.3586" y="403.27917" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v5" label="orange">
+        <attvalues>
+          <attvalue for="frequency" value="36.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-371.57397" y="-134.6503" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v6" label="garlic">
+        <attvalues>
+          <attvalue for="frequency" value="212.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="263.65457" y="387.66785" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v7" label="cane_molasses">
+        <attvalues>
+          <attvalue for="frequency" value="35.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-564.72363" y="558.6262" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v8" label="almond">
+        <attvalues>
+          <attvalue for="frequency" value="52.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-512.7681" y="-345.53262" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v9" label="chickpea">
+        <attvalues>
+          <attvalue for="frequency" value="35.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="650.6897" y="-575.7583" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v10" label="scallion">
+        <attvalues>
+          <attvalue for="frequency" value="57.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-288.8083" y="554.3195" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v11" label="parsley">
+        <attvalues>
+          <attvalue for="frequency" value="134.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="2.2865746" y="52.665855" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v12" label="onion">
+        <attvalues>
+          <attvalue for="frequency" value="221.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="58.41716" y="-108.08285" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v13" label="lemon_juice">
+        <attvalues>
+          <attvalue for="frequency" value="160.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="390.57" y="608.7043" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v14" label="beef">
+        <attvalues>
+          <attvalue for="frequency" value="48.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="242.7127" y="-75.97858" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v15" label="black_pepper">
+        <attvalues>
+          <attvalue for="frequency" value="145.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="419.05997" y="79.72192" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v16" label="lamb">
+        <attvalues>
+          <attvalue for="frequency" value="48.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-66.56666" y="117.00999" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v17" label="chicken">
+        <attvalues>
+          <attvalue for="frequency" value="64.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="34.5172" y="-341.3799" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v18" label="tomato">
+        <attvalues>
+          <attvalue for="frequency" value="110.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="76.32088" y="154.43341" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v19" label="orange_juice">
+        <attvalues>
+          <attvalue for="frequency" value="35.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-504.44495" y="-179.2608" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v20" label="cream">
+        <attvalues>
+          <attvalue for="frequency" value="44.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-629.9682" y="339.50247" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v21" label="raisin">
+        <attvalues>
+          <attvalue for="frequency" value="40.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-394.03006" y="130.15034" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v22" label="thyme">
+        <attvalues>
+          <attvalue for="frequency" value="35.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-42.696434" y="-20.177729" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v23" label="cinnamon">
+        <attvalues>
+          <attvalue for="frequency" value="124.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-315.8054" y="-14.625531" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v24" label="honey">
+        <attvalues>
+          <attvalue for="frequency" value="43.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-335.00723" y="-287.5846" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v25" label="butter">
+        <attvalues>
+          <attvalue for="frequency" value="165.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-546.2581" y="253.50017" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v26" label="milk">
+        <attvalues>
+          <attvalue for="frequency" value="43.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-429.7343" y="322.46582" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v27" label="cayenne">
+        <attvalues>
+          <attvalue for="frequency" value="73.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="325.14597" y="166.98526" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v28" label="cilantro">
+        <attvalues>
+          <attvalue for="frequency" value="65.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-117.2689" y="5.5655713" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v29" label="dill">
+        <attvalues>
+          <attvalue for="frequency" value="39.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-39.944927" y="-243.68896" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v30" label="wheat">
+        <attvalues>
+          <attvalue for="frequency" value="272.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="840.14307" y="54.441254" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v31" label="cucumber">
+        <attvalues>
+          <attvalue for="frequency" value="33.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="25.76006" y="395.43604" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v32" label="cumin">
+        <attvalues>
+          <attvalue for="frequency" value="115.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="385.80725" y="-63.26252" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v33" label="bell_pepper">
+        <attvalues>
+          <attvalue for="frequency" value="68.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="203.81133" y="69.27154" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v34" label="bread">
+        <attvalues>
+          <attvalue for="frequency" value="70.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-41.7982" y="276.40543" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v35" label="olive_oil">
+        <attvalues>
+          <attvalue for="frequency" value="262.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="49.825073" y="632.0623" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v36" label="mint">
+        <attvalues>
+          <attvalue for="frequency" value="73.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="158.0514" y="286.94034" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v37" label="vinegar">
+        <attvalues>
+          <attvalue for="frequency" value="42.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-45.03874" y="11.500505" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v38" label="yogurt">
+        <attvalues>
+          <attvalue for="frequency" value="57.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-190.43962" y="370.30984" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v39" label="chicken_broth">
+        <attvalues>
+          <attvalue for="frequency" value="57.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="13.659541" y="-560.6592" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v40" label="ginger">
+        <attvalues>
+          <attvalue for="frequency" value="37.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-55.723976" y="-135.50061" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v41" label="vanilla">
+        <attvalues>
+          <attvalue for="frequency" value="45.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-555.261" y="95.83831" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v42" label="turmeric">
+        <attvalues>
+          <attvalue for="frequency" value="35.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="365.3542" y="-245.13832" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v43" label="walnut">
+        <attvalues>
+          <attvalue for="frequency" value="51.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-612.0987" y="-86.18247" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v44" label="carrot">
+        <attvalues>
+          <attvalue for="frequency" value="63.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="136.6234" y="-209.509" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v45" label="vegetable_oil">
+        <attvalues>
+          <attvalue for="frequency" value="132.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-522.9025" y="-558.90515" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="v46" label="potato">
+        <attvalues>
+          <attvalue for="frequency" value="48.0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="320.92715" y="-346.36185" z="0.0"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="v1" target="v5" weight="4.248495">
+        <attvalues>
+          <attvalue for="pmi" value="0.605619141197675"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v1" target="v22" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.633790018164372"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v3" weight="2.5649493">
+        <attvalues>
+          <attvalue for="pmi" value="0.93863146114876"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v6" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.607569093066754"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v16" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.935501568139833"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v21" weight="1.609438">
+        <attvalues>
+          <attvalue for="pmi" value="0.511687321363472"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v22" weight="2.1972246">
+        <attvalues>
+          <attvalue for="pmi" value="0.645218713987994"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v32" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="1.4925165743752"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v36" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.603254514888962"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v37" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.750579229645821"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v40" weight="3.218876">
+        <attvalues>
+          <attvalue for="pmi" value="0.995113970941348"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v2" target="v42" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="1.56150944586215"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v3" target="v42" weight="1.609438">
+        <attvalues>
+          <attvalue for="pmi" value="1.15604433775399"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v3" target="v46" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="0.840191388335508"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v4" target="v26" weight="3.4965076">
+        <attvalues>
+          <attvalue for="pmi" value="0.598882479157173"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v4" target="v41" weight="2.1972246">
+        <attvalues>
+          <attvalue for="pmi" value="0.849685921223588"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v5" target="v19" weight="4.0073333">
+        <attvalues>
+          <attvalue for="pmi" value="2.10297203909003"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v5" target="v21" weight="2.1972246">
+        <attvalues>
+          <attvalue for="pmi" value="0.806289836659826"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v5" target="v37" weight="2.3978953">
+        <attvalues>
+          <attvalue for="pmi" value="0.534356121176185"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v5" target="v41" weight="2.944439">
+        <attvalues>
+          <attvalue for="pmi" value="1.27629346590556"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v5" target="v43" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="1.03334728729517"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v6" target="v16" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.573667541391073"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v6" target="v18" weight="1.609438">
+        <attvalues>
+          <attvalue for="pmi" value="0.631691381507451"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v6" target="v38" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.503599978774356"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v8" target="v5" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="1.13171223709445"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v8" target="v19" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.908568685780245"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v8" target="v23" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.693457306163299"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v8" target="v24" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="1.05939157551483"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v8" target="v25" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.50310357767208"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v8" target="v40" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.516526598004221"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v8" target="v41" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.50310357767208"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v11" target="v18" weight="2.3978953">
+        <attvalues>
+          <attvalue for="pmi" value="0.677592640822765"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v12" target="v18" weight="3.0445225">
+        <attvalues>
+          <attvalue for="pmi" value="0.714412671339287"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v13" target="v36" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.658965121902968"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v2" weight="3.0445225">
+        <attvalues>
+          <attvalue for="pmi" value="0.617047837021298"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v6" weight="2.3025851">
+        <attvalues>
+          <attvalue for="pmi" value="0.537299897220198"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v12" weight="3.4339871">
+        <attvalues>
+          <attvalue for="pmi" value="0.863448250499775"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v15" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.511687321363472"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v18" weight="4.2904596">
+        <attvalues>
+          <attvalue for="pmi" value="0.942091377818888"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v37" weight="2.8903718">
+        <attvalues>
+          <attvalue for="pmi" value="0.652139156832568"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v39" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.634439579733167"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v44" weight="2.8332133">
+        <attvalues>
+          <attvalue for="pmi" value="0.939821229284349"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v14" target="v46" weight="4.189655">
+        <attvalues>
+          <attvalue for="pmi" value="0.518607764208046"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v15" target="v2" weight="2.5649493">
+        <attvalues>
+          <attvalue for="pmi" value="0.610127394176724"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v15" target="v16" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.953520073642511"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v15" target="v27" weight="3.6109178">
+        <attvalues>
+          <attvalue for="pmi" value="0.534261643402011"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v16" target="v12" weight="2.3025851">
+        <attvalues>
+          <attvalue for="pmi" value="0.633873808855275"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v16" target="v18" weight="3.3672957">
+        <attvalues>
+          <attvalue for="pmi" value="1.07562277044341"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v16" target="v22" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.652139156832568"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v16" target="v36" weight="1.9459101">
+        <attvalues>
+          <attvalue for="pmi" value="1.14080320879571"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v16" target="v37" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="0.652139156832568"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v16" target="v38" weight="2.7725887">
+        <attvalues>
+          <attvalue for="pmi" value="1.03990468784133"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v17" target="v3" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.88898155250494"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v17" target="v12" weight="3.0445225">
+        <attvalues>
+          <attvalue for="pmi" value="0.575766178047994"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v17" target="v22" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="0.546778641174742"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v17" target="v29" weight="2.3978953">
+        <attvalues>
+          <attvalue for="pmi" value="0.592715736361768"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v17" target="v39" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.569901058595596"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v17" target="v40" weight="3.1780539">
+        <attvalues>
+          <attvalue for="pmi" value="0.778890862471712"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v17" target="v42" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="1.05760426494073"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v18" target="v42" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.516006982507988"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v19" target="v21" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.611317162312313"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v19" target="v41" weight="2.1972246">
+        <attvalues>
+          <attvalue for="pmi" value="1.05314991459135"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v19" target="v43" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.773836091810088"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v20" target="v4" weight="2.3025851">
+        <attvalues>
+          <attvalue for="pmi" value="0.674333033745727"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v20" target="v21" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="1.07562277044341"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v20" target="v26" weight="3.1780539">
+        <attvalues>
+          <attvalue for="pmi" value="1.40876721697195"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v20" target="v41" weight="1.9459101">
+        <attvalues>
+          <attvalue for="pmi" value="1.36330484289519"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v20" target="v43" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.544994519381241"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v21" target="v41" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.91961852196683"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v21" target="v43" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.927986771637346"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v22" target="v18" weight="2.3025851">
+        <attvalues>
+          <attvalue for="pmi" value="0.698328539301943"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v5" weight="3.0910425">
+        <attvalues>
+          <attvalue for="pmi" value="0.704507142349884"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v16" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.610981084339061"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v19" weight="1.609438">
+        <attvalues>
+          <attvalue for="pmi" value="0.578527339489322"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v21" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.850461054972964"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v24" weight="1.9459101">
+        <attvalues>
+          <attvalue for="pmi" value="0.883500909051164"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v26" weight="2.1972246">
+        <attvalues>
+          <attvalue for="pmi" value="0.526825965112432"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v40" weight="3.1780539">
+        <attvalues>
+          <attvalue for="pmi" value="1.0337831121005"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v41" weight="2.6390574">
+        <attvalues>
+          <attvalue for="pmi" value="0.550356462522626"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v23" target="v43" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.66158209763285"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v24" target="v5" weight="2.944439">
+        <attvalues>
+          <attvalue for="pmi" value="1.32175583998232"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v24" target="v19" weight="2.3978953">
+        <attvalues>
+          <attvalue for="pmi" value="1.45528723260684"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v24" target="v43" weight="1.609438">
+        <attvalues>
+          <attvalue for="pmi" value="0.722134717433197"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v25" target="v4" weight="3.3672957">
+        <attvalues>
+          <attvalue for="pmi" value="0.521570279193317"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v25" target="v20" weight="3.1354942">
+        <attvalues>
+          <attvalue for="pmi" value="0.837211746998413"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v25" target="v21" weight="2.7725887">
+        <attvalues>
+          <attvalue for="pmi" value="0.507638732837472"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v25" target="v26" weight="4.317488">
+        <attvalues>
+          <attvalue for="pmi" value="0.693147180559945"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v25" target="v41" weight="3.5263605">
+        <attvalues>
+          <attvalue for="pmi" value="1.0223782559246"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v26" target="v21" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.810930216216329"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v26" target="v38" weight="3.2580965">
+        <attvalues>
+          <attvalue for="pmi" value="0.610909082322973"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v26" target="v41" weight="3.1780539">
+        <attvalues>
+          <attvalue for="pmi" value="1.29928298413026"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v27" target="v2" weight="2.5649493">
+        <attvalues>
+          <attvalue for="pmi" value="1.11408013865495"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v27" target="v6" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.60639423489363"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v27" target="v16" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.946647194354749"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v27" target="v18" weight="2.3978953">
+        <attvalues>
+          <attvalue for="pmi" value="0.522832947578388"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v27" target="v32" weight="1.9459101">
+        <attvalues>
+          <attvalue for="pmi" value="1.12273820139807"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v27" target="v36" weight="2.3025851">
+        <attvalues>
+          <attvalue for="pmi" value="0.527388764114249"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v27" target="v37" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.743706350358059"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v27" target="v40" weight="2.8332133">
+        <attvalues>
+          <attvalue for="pmi" value="0.965768235801527"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v28" target="v2" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="1.0070087585935"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v28" target="v18" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.729876897036869"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v28" target="v40" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="0.986530227249957"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v29" target="v3" weight="2.5649493">
+        <attvalues>
+          <attvalue for="pmi" value="0.904729909473079"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v29" target="v11" weight="2.3025851">
+        <attvalues>
+          <attvalue for="pmi" value="0.615899071817425"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v29" target="v38" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.959861980167795"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v31" target="v6" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.56059545982372"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v31" target="v11" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.847491677618162"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v31" target="v18" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="1.36330484289519"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v31" target="v22" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.516006982507988"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v31" target="v29" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="1.25509125825496"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v31" target="v36" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="1.45487203642068"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v31" target="v37" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="1.18098328610124"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v31" target="v38" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="1.00913302917458"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v32" target="v40" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.598306925576298"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v32" target="v42" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="1.26001258030142"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v2" weight="2.9957323">
+        <attvalues>
+          <attvalue for="pmi" value="0.587194873871617"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v6" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.764357347855544"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v17" weight="2.7080503">
+        <attvalues>
+          <attvalue for="pmi" value="0.798909729362204"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v22" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="0.640304699185565"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v27" weight="3.6109178">
+        <attvalues>
+          <attvalue for="pmi" value="0.731871892711056"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v31" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.544994519381241"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v32" weight="1.9459101">
+        <attvalues>
+          <attvalue for="pmi" value="0.762907021277898"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v34" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.709297570672517"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v37" weight="1.9459101">
+        <attvalues>
+          <attvalue for="pmi" value="0.591514535016133"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v33" target="v44" weight="2.8332133">
+        <attvalues>
+          <attvalue for="pmi" value="0.67155724268967"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v6" weight="1.3862944">
+        <attvalues>
+          <attvalue for="pmi" value="0.735369810982292"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v11" weight="1.609438">
+        <attvalues>
+          <attvalue for="pmi" value="0.756902479280648"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v16" weight="3.2580965">
+        <attvalues>
+          <attvalue for="pmi" value="0.988611393453781"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v18" weight="3.4011974">
+        <attvalues>
+          <attvalue for="pmi" value="0.852479219129201"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v27" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.874734612764463"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v28" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.754418005952986"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v31" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="1.20915416306793"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v35" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.564433576413463"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v36" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.763508977654238"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v37" weight="2.5649493">
+        <attvalues>
+          <attvalue for="pmi" value="0.680310033799265"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v34" target="v38" weight="2.8903718">
+        <attvalues>
+          <attvalue for="pmi" value="1.17343608046585"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v35" target="v18" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.582452081916141"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v36" target="v11" weight="2.3978953">
+        <attvalues>
+          <attvalue for="pmi" value="0.682148457358626"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v36" target="v18" weight="2.6390574">
+        <attvalues>
+          <attvalue for="pmi" value="0.912297714340111"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v39" target="v28" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="0.554396872059631"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v40" target="v24" weight="2.6390574">
+        <attvalues>
+          <attvalue for="pmi" value="1.0430424375133"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v40" target="v37" weight="2.3025851">
+        <attvalues>
+          <attvalue for="pmi" value="0.50695714698807"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v40" target="v42" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="0.689278703782025"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v41" target="v43" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.67667234335644"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v2" weight="2.7080503">
+        <attvalues>
+          <attvalue for="pmi" value="0.663567852656191"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v11" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.563770006382478"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v12" weight="1.9459101">
+        <attvalues>
+          <attvalue for="pmi" value="0.565539048612873"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v16" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.534356121176185"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v17" weight="2.4849067">
+        <attvalues>
+          <attvalue for="pmi" value="0.732181864506105"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v22" weight="2.0794415">
+        <attvalues>
+          <attvalue for="pmi" value="1.07335262190887"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v29" weight="2.3978953">
+        <attvalues>
+          <attvalue for="pmi" value="0.965139037268639"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v37" weight="1.7917595">
+        <attvalues>
+          <attvalue for="pmi" value="0.667887513800707"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v39" weight="0.6931472">
+        <attvalues>
+          <attvalue for="pmi" value="1.11627766662591"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v40" weight="3.1354942">
+        <attvalues>
+          <attvalue for="pmi" value="0.661107826815329"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v42" weight="1.9459101">
+        <attvalues>
+          <attvalue for="pmi" value="0.562526998142881"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v44" target="v46" weight="2.7080503">
+        <attvalues>
+          <attvalue for="pmi" value="0.757499672490395"></attvalue>
+        </attvalues>
+      </edge>
+      <edge source="v46" target="v42" weight="1.0986123">
+        <attvalues>
+          <attvalue for="pmi" value="0.652139156832568"></attvalue>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

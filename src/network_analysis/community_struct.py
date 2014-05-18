@@ -7,7 +7,7 @@ import networkx as nx
 ## For the middle eastern recipe ingredients graph, find the ingredient
 ## that is in the same community as vanilla.
 def q1():
-  G = nx.read_gexf("../../data/network-analysis/MiddleEasternHW4.gexf")
+  G = nx.read_gexf("../../data/network_analysis/MiddleEasternHW4.gexf")
   partition = community.best_partition(G.to_undirected())
   # partition is a map of node_id => partition_id. From gexf file, vanilla
   # is nodeID v41 which is partition 2. So we find all the others nodes in

@@ -6,7 +6,7 @@ import networkx as nx
 import numpy as np
 import operator
 
-filename = "../../data/network-analysis/wikipedia.gml"
+filename = "../../data/network_analysis/wikipedia.gml"
 
 # Estimate the exponent of the power law for the degree distribution of
 # the wikipedia graph. We iterate through the nodes of the graph, then

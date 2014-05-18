@@ -53,7 +53,7 @@ def read_gdf(filename):
   return G
 
 def q1():
-  lada = nx.read_gml("../../data/network-analysis/LadaFacebookAnon.gml")
+  lada = nx.read_gml("../../data/network_analysis/LadaFacebookAnon.gml")
   print_stats(lada, "LadaFacebookAnon")
   p = compute_edge_creation_probability(
     lada.number_of_nodes(), lada.number_of_edges())
@@ -61,7 +61,7 @@ def q1():
   print_stats(erg, "Erdos-Renyi Random")
 
 def q2():
-  gnutella = read_gdf("../../data/network-analysis/gnutella2.gdf")
+  gnutella = read_gdf("../../data/network_analysis/gnutella2.gdf")
   print_stats(gnutella, "Gnutella")
   p = compute_edge_creation_probability(
     gnutella.number_of_nodes(), gnutella.number_of_edges())
@@ -69,7 +69,7 @@ def q2():
   print_stats(erg, "Erdos-Renyi Random")
 
 def q3():
-  lada = nx.read_gml("../../data/network-analysis/LadaFacebookAnon.gml")
+  lada = nx.read_gml("../../data/network_analysis/LadaFacebookAnon.gml")
   # lada's FB graph doesn't contain her name, but since we know its
   # "her" graph, this would be a node that is connected to every node
   # in the graph, so we add one of these, then calculate the clustering
