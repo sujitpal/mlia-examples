@@ -13,3 +13,4 @@ List of Notebooks:
 * [Chapter 9: Support Vector Machines](http://nbviewer.ipython.org/github/sujitpal/mlia-examples/blob/master/src/statlearning_notebooks/chapter9.ipynb)
 * [Chapter 10: Unsupervised Methods](http://nbviewer.ipython.org/github/sujitpal/mlia-examples/blob/master/src/statlearning_notebooks/chapter10.ipynb)
 
+More information in [my blog post](http://sujitpal.blogspot.com/2014/05/ipython-notebooks-for-statlearning.html).
