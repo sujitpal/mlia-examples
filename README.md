@@ -40,3 +40,6 @@ src/yelp\_ufc
 ==============
 Scikit-Learn code to build and evaluate 3 Naive Bayes classifers to predict if a review is useful, funny or cool. Uses data from the Yelp challenge on Kaggle that requires solutions to also predict number of votes that a review will receive in each category. I wanted to figure out if Sentiment Analysis could be treated as a classification problem (rather than use polarity keywords).
 
+src/proc\_outliers
+==================
+Exploratory data analysis of Medicare/Mediclaim data to convert claim codes into a univariate distribution of cluster diameters, and apply univariate outlier detection techniques to find abnormal (possibly fraudulent) claims.
