@@ -43,3 +43,12 @@ Scikit-Learn code to build and evaluate 3 Naive Bayes classifers to predict if a
 src/proc\_outliers
 ==================
 Exploratory data analysis of Medicare/Mediclaim data to convert claim codes into a univariate distribution of cluster diameters, and apply univariate outlier detection techniques to find abnormal (possibly fraudulent) claims.
+
+src/digit\_recognition
+=====================
+Using subset of MNIST dataset to predict value of handwritten digits using neural networks constructed using PyBrain.
+
+src/mtcrawler
+=============
+Using ScraPy for building a small focused crawler.
+
