@@ -25,13 +25,13 @@ NUM_EPOCHS = 250
 NUM_HIDDEN_UNITS = 100
 
 #print "Loading MATLAB data..."    
-#data = scipy.io.loadmat("../../data/digit_recognition/ex3data1.mat")
+#data = scipy.io.loadmat("../../data/mlpas/ex3data1.mat")
 #X = data["X"]
 #y = data["y"]
 #y[y == 10] = 0 # '0' is encoded as '10' in data, fix it
 
 print "Loading CSV data..."
-data = np.loadtxt("../../data/digit_recognition/train.csv", skiprows=1, delimiter=",")
+data = np.loadtxt("../../data/mlpas/ex5data_train.csv", skiprows=1, delimiter=",")
 y = data[:, 0]
 X = data[:, 1:]
 
@@ -86,8 +86,8 @@ print "Accuracy on test set: %7.4f" % accuracy_score(ytrues, ypreds, normalize=T
 
 # generate submission data
 print "Generate submission data..."
-Xsubmit = np.loadtxt("../../data/digit_recognition/test.csv", skiprows=1, delimiter=",")
-fsubmit = open("../../data/digit_recognition/submit.csv", 'wb')
+Xsubmit = np.loadtxt("../../data/mlpas/ex5data_test.csv", skiprows=1, delimiter=",")
+fsubmit = open("../../data/mlpas/ex5data_submit.csv", 'wb')
 fsubmit.write("ImageId,Label\n")
 for i in range(Xsubmit.shape[0]):
     pred = fnn.activate(Xsubmit[i, :])
