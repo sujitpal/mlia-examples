@@ -44,9 +44,9 @@ src/proc\_outliers
 ==================
 Exploratory data analysis of Medicare/Mediclaim data to convert claim codes into a univariate distribution of cluster diameters, and apply univariate outlier detection techniques to find abnormal (possibly fraudulent) claims.
 
-src/digit\_recognition
+src/mlpas
 =====================
-Using subset of MNIST dataset to predict value of handwritten digits using neural networks constructed using PyBrain.
+Programming Assignments from Andrew Ng's Machine Learning Class on Coursera, but not solved using first principles as the course intends. I have used ML toolkits I am familiar with (or became familiar with) such as Numpy, Scipy, Matplotlib, Sklearn, Pybrain, etc, to solve the PAs.
 
 src/mtcrawler
 =============
