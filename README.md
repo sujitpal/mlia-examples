@@ -55,3 +55,7 @@ Using ScraPy for building a small focused crawler.
 src/hartley
 ===========
 Random Forest Classifier to detect interesting surface features on planetary objects.
+
+src/citrus\_pca
+==============
+Data Analysis of Reflectance Spectrum, Principal Component Analysis (PCA), and Linear Discriminant Analysis (LDA) Classifier to predict Citrus vs Non-Citrus and different varieties of Citrus plants.
