@@ -59,3 +59,8 @@ Random Forest Classifier to detect interesting surface features on planetary obj
 src/citrus\_pca
 ==============
 Data Analysis of Reflectance Spectrum, Principal Component Analysis (PCA), and Linear Discriminant Analysis (LDA) Classifier to predict Citrus vs Non-Citrus and different varieties of Citrus plants.
+
+src/skin\_colors
+================
+Simulation of evolution of skin colors using 3 alleles. Based on Quora answer by Pippi Maria Groving.
+
