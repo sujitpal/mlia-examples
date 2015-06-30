@@ -64,3 +64,7 @@ src/skin\_colors
 ================
 Simulation of evolution of skin colors using 3 alleles. Based on Quora answer by Pippi Maria Groving.
 
+src/moviequotes
+==================
+Using [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/wiki) to build a simple binary text classifier to predict memorableness of movie quotes. Dataset from Cornell Movie Quotes Corpus, distributed along with the paper - [You Had me at Hello - How Phrasing affects memorability, by Danescu-Niculescu-Mizil, et al](http://www.cs.cornell.edu/~cristian/memorability.html).
+
