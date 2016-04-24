@@ -68,3 +68,6 @@ src/moviequotes
 ==================
 Using [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/wiki) to build a simple binary text classifier to predict memorableness of movie quotes. Dataset from Cornell Movie Quotes Corpus, distributed along with the paper - [You Had me at Hello - How Phrasing affects memorability, by Danescu-Niculescu-Mizil, et al](http://www.cs.cornell.edu/~cristian/memorability.html).
 
+src/d2v\_tagpred
+===============
+Predicting new movie tags for movies given the plotline and human assigned tags, using Gensim's Doc2Vec implementation. Blog post [http://sujitpal.blogspot.com/2016/04/predicting-movie-tags-from-plots-using.html](here).
