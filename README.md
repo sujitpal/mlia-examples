@@ -70,4 +70,9 @@ Using [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/wiki) to bui
 
 src/d2v\_tagpred
 ===============
-Predicting new movie tags for movies given the plotline and human assigned tags, using Gensim's Doc2Vec implementation. Blog post [http://sujitpal.blogspot.com/2016/04/predicting-movie-tags-from-plots-using.html](here).
+Predicting new movie tags for movies given the plotline and human assigned tags, using Gensim's Doc2Vec implementation. Blog post [here]([http://sujitpal.blogspot.com/2016/04/predicting-movie-tags-from-plots-using.html).
+
+src/student-alcohol
+====================
+Predicting student alcohol consumption given 32 student attributes, using Gradient Boosted trees from XGBoost. Blog post [here](http://sujitpal.blogspot.com/2016/10/predicting-student-alcohol-consumption.html).
+
