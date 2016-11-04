@@ -19,7 +19,8 @@ Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.3,
                                                 random_state=42)
 
 clf = XGBClassifier()
-clf.fit(Xtrain, ytrain)
+clf.fit(Xtrain, ytrain, early_stopping_rounds=10, eval_metric="logloss",
+        eval_set=[(Xtest, ytest)], verbose=True)
 
 y_ = clf.predict(Xtest)
 
