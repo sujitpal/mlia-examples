@@ -76,7 +76,7 @@ src/student-alcohol
 ====================
 Predicting student alcohol consumption given 32 student attributes, using Gradient Boosted trees from XGBoost. Blog post [here](http://sujitpal.blogspot.com/2016/10/predicting-student-alcohol-consumption.html).
 
-src/hyperam-opt
-=================
+src/hyperparam-opt
+===================
 Random Search vs Grid Search - Blog post [here](http://sujitpal.blogspot.com/2016/12/random-vs-grid-search-which-is-better.html).
 
